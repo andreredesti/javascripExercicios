@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang=“pt-br”>
+<head>
+	<title>Números inteiros</title>
+	<meta charset=“UTF-8”>
+</head>
+
+<body>
+	<script>
+
+		//Verifica se o número é positivo ou negativo e mostra a quantidade de positivos ou negativos (limitado a 6 números)
+		//Não verifica se o número é igual a zero. 
+
+		let positivos = 0
+		let negativos = 0
+		let numeros //= new Array(6)//A implementação do array estou estudando como fazer. // 
+
+		for (i = 0; i <= 5; i++){
+		numeros = prompt("Escreva o número desejado")
+		if (numeros > 0){
+			positivos = positivos + 1
+			} else if(numeros < 0){
+				negativos = negativos + 1
+			}
+		}
+		document.write("<br>" + "A quantidade de números positivos: " + positivos) //O <br> quebra a linha //
+		document.write("<br>" + "A quantidade de números negativos: " + negativos)
+
+	</script>
+
+</body>
+</html>
